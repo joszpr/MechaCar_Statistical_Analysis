@@ -40,5 +40,21 @@ total_summary <- sc_import %>% summarize(Mean = mean(PSI), Median = median(PSI),
 # Get the summary statistics of sc_import data separated by Manufacturing_Lot
 lot_summary <- sc_import %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))
 
+#
+# T.Test
+#
+
+# T.Test for PSI across all manufacturing lots
+t.test(sc_import$PSI, mu=1500)
+
+# T.Test for PSI for Lot 1
+t.test(sc_import$PSI, mu=1500, subset = sc_import$Manufacturing_Lot == Lot1)
+
+# T.Test for PSI for Lot 2
+t.test(sc_import$PSI, mu=1500, subset = sc_import$Manufacturing_Lot == Lot2)
+
+# T.Test for PSI for Lot 3
+t.test(sc_import$PSI, mu=1500, subset = sc_import$Manufacturing_Lot == Lot3)
+
 
 

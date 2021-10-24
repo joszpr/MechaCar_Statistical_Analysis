@@ -1,10 +1,11 @@
 # MechaCar_Statistical_Analysis
 
 ## Linear Regression to Predict MPG
-write a short summary using a screenshot of the output from the linear regression, and address the following questions:
-![I - Summary of Linear Regression](https://user-images.githubusercontent.com/85839235/138612331-937bed45-2da7-4206-ae3c-cd810b8da193.png)
 
 A multiple linear regression was performed with the 5 variables present in the sc_import data set(Vehicle Length, Vehicle Weight, Spoiler Angle, Ground Clearance and All Wheel Drive (AWD)) had any effects in the Miles Per Gallon (MPG) variable. Linear Regression can be used to test possible correlation between different variables. 
+
+![I - Summary of Linear Regression](https://user-images.githubusercontent.com/85839235/138612331-937bed45-2da7-4206-ae3c-cd810b8da193.png)
+
 
 **Summary Statistics** 
 The statistics provided from the Linear Regression help us understand the relationship between the dependant variable and the independent variables. 
@@ -32,9 +33,14 @@ In conclusion to the summary statistics based on the Multiple Linear Regression,
 
 
 ## Summary Statistics on Suspension Coils
-short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+An analysis was performed using data on the manufacturing specifications of the MechaCar suspension coils. The variance of the suspension coils must not exceed 100 pounds per square inch in order to meet the design specification of the vehicle. There are currently 3 manufacturing lots producing the suspension coils. 
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+![II - SC Summary Statistics](https://user-images.githubusercontent.com/85839235/138616009-3abe36b3-6941-4209-a8cb-d6a546ade086.png)
+By calculating statistics of all the data from across all lots, we can identify that the average suspensions are around 1498.78 pounds per square inch, which is close to the design of 1500 pounds per square inch. There is a variance of 62.29 pounds per square inch observed. In order to identify if the difference in suspension coils is across all Manufacturing Lots, the same analysis was done by Lot. 
+
+![III - Summary Statistics by Lot](https://user-images.githubusercontent.com/85839235/138616076-6a238802-d78f-43c2-a331-4c69bccccc47.png)
+Looking at each individual lot statistics, we can identify that Lot 1 and Lot 2 are meeting the requirements of the suspension coils specifications. Lot 3 is presenting a higher degree of variance with 170. Altought the average coils produce by Lot 3 are close to ther 1500 pounds per square inch, it seems the are variations that do not meet the required manufacturing requirements for the MechaCar. 
+
 
 ## T-Tests on Suspension Coils
 briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.

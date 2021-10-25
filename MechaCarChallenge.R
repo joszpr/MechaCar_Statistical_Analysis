@@ -50,11 +50,12 @@ t.test(sc_import$PSI, mu=1500)
 # T.Test for PSI for Lot 1
 t.test(sc_import$PSI, mu=1500, subset = sc_import$Manufacturing_Lot == Lot1)
 
+
 # T.Test for PSI for Lot 2
 t.test(sc_import$PSI, mu=1500, subset = sc_import$Manufacturing_Lot == Lot2)
 
 # T.Test for PSI for Lot 3
-t.test(sc_import$PSI, mu=1500, subset = sc_import$Manufacturing_Lot == Lot3)
+t.test(sc_import$PSI, mu=1500, subset = lot_summary$Manufacturing_Lot == Lot3)
 
 
 

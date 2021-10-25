@@ -39,17 +39,27 @@ An analysis was performed using data on the manufacturing specifications of the 
 By calculating statistics of all the data from across all lots, we can identify that the average suspensions are around 1498.78 pounds per square inch, which is close to the design of 1500 pounds per square inch. There is a variance of 62.29 pounds per square inch observed. In order to identify if the difference in suspension coils is across all Manufacturing Lots, the same analysis was done by Lot. 
 
 ![III - Summary Statistics by Lot](https://user-images.githubusercontent.com/85839235/138616076-6a238802-d78f-43c2-a331-4c69bccccc47.png)
-Looking at each individual lot statistics, we can identify that Lot 1 and Lot 2 are meeting the requirements of the suspension coils specifications. Lot 3 is presenting a higher degree of variance with 170. Altought the average coils produce by Lot 3 are close to ther 1500 pounds per square inch, it seems the are variations that do not meet the required manufacturing requirements for the MechaCar. 
+Looking at each individual lot statistics, we can identify that Lot 1 and Lot 2 are meeting the requirements of the suspension coils specifications. Lot 3 is presenting a higher degree of variance with 170. Altought the average coils produce by Lot 3 are close to ther 1500 pounds per square inch, it seems the are variations that may not meet the required manufacturing requirements for the MechaCar. 
 
 
 ## T-Tests on Suspension Coils
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
 
+In a one-sample t-test, you compare the mean of the data from one group of to some hypothesized mean. In our case we used the 1500 PSI as our hypothesized mean and compared it to the mean of all manufacturing lots and also each invididual lot. 
+
+![IV - T-Test](https://user-images.githubusercontent.com/85839235/138631103-0ce8373b-862a-4a1b-a5be-cfb98b6437f8.png)
+In this calculation it showed little variance on the mean for each lot. It could be inferred that comparing it to the previous summary statistics, the mean of the coils are close to 1500 PSI but there it a higher variance between coils. 
 
 ## Study Design: MechaCar vs Competition
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
 
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+In order to compare the MechaCar with its competition we must do two main things; identify the vehicles in direct competition to the intended market and second, which variables can be measured to compare. 
+
+For our data analysis comparison, we will focus on the variables to be measured in order to provide a comparison. 
+According to the Environmental and Energy Study Institute1️⃣, factors like Materials, Ride Height, Wheels, Type of Transmission, Starter/Generator are variables that can affect vehicle efficiency. It would be wise to study those variables along with Vehicle length, Vehicle Weight, Spolier Angle, Ground Clearance (which is similar to Ride height) and AWD. 
+
+If the data can be collected with competitors design, a Statistical Summary regarding each vehicle design would be benefitial as initial comparison.
+
+We could develop a hypothesis that none of the different designs and variables affect the efficiency and performance of each vehicle. But we could compare each different design variable that can be measured in order to see if any of the hold any impact on efficiency and performance. if enough data is gathered by variable, we could measure MPG of each vehicle in comparison to different performance variable. 
+
+If the conditions for a linear regression hold true, we could perform a multiple linear regression with each variable and compare the variability that each variable have in comparison to MPG. We could then perform a T-Test and Chi-squared Test in order to measure the difference in categorical groups. 
+
+1️⃣ https://www.eesi.org/topics/vehicle-efficiency/description
